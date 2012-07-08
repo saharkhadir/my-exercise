@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>layout2</title>
+<style type="text/css" >
+/*div{ 
+outline:1px dashed green;
+}*/
+
+div.container{
+width:1080px;/* width dar tarahia lozuman haman 950 nis*/
+margin:0 auto;
+min-height:1260px;
+background-color:#eee;
+}
+
+body{
+background-color:#ddd;         /*body hichvaght class nemigirad*/
+}
+
+div.clear{
+	width:0;
+	height:0;
+	clear:both;}
+	
+	
+
+div.header{
+width:960px;
+min-height:185px;
+padding:15px 60px 0px 60px;
+	}
+	
+div.header-l{
+width:330px;
+float:left;
+min-height:185px;
+background-image:url(images/23_02.gif);
+background-repeat:no-repeat;
+}
+div.header-r{
+min-height:90px;
+margin-left:330px;
+width:560px;
+padding:10px 75px 22px 20px;
+}
+
+div.header-menu{
+min-height:60px;
+}
+
+div.header-text{
+min-height:105px;
+}
+		
+
+		
+div.content{
+min-height:650px;
+padding:10px 60px 0px 60px;
+width:960px;
+
+}
+		
+div.content-top{
+min-height:350px;
+background-image:url(images/23_06.gif);
+background-repeat:no-repeat;
+background-position:top center;
+padding:183px 0px 0px  650px;
+min-height:170px;
+width:310px;
+}
+div.top-in{
+width:294px;
+height:52px;
+background-color:black;
+color:#Fc0;
+font-size:22px;
+padding:8px;
+opacity:0.6;
+filter:alpha(opacity=60);
+}
+div.top-in span{
+font-size:22px;
+color:#999;
+}
+
+		
+div.content-down{
+min-height:245px;
+padding:10px 5px 50px 5px;
+
+}
+div.left{
+width:315px;
+min-height:inherit;
+float:left;
+background-image:url(images/2556_03.gif);
+background-repeat:no-repeat;
+}
+div.right{
+width:315px;
+min-height:inherit;
+background-image:url(images/2556_07.gif);
+background-repeat:no-repeat;
+float:right;
+}
+div.middle{
+min-height:inherit;
+margin:0 315px 0 315px;
+background-image:url(images/2556_05.gif);
+background-repeat:no-repeat;
+width:315px;
+position:absolute;
+}
+
+
+
+div.footer{
+min-height:380px;
+
+}
+
+div.footer-top{
+min-height:190px;
+padding:25px 60px 35px 60px;
+width:960px;
+border-top:1px dashed #bbb;
+border-bottom:1px dashed #bbb;
+}
+		
+div.footer1{
+min-height:inherit;
+width:170px;
+float:left;
+}
+		
+div.footer2{
+min-height:inherit;
+width:250px;
+float:left;
+margin-left:8px;
+
+}
+		
+div.footer3{
+min-height:inherit;
+width:220px;
+float:left;
+}
+		
+div.footer4{
+min-height:inherit;
+margin-left:690px;
+                ---!age ino nadam heightesh beham mireze---
+}
+div.footer-down{
+min-height:70px;
+padding:25px 60px 35px 60px;
+}
+div.footer-r{
+	width:330px;
+	min-height:30px;
+	float:left;
+	float:left;
+font-size:11px;
+}
+div.footer-l{
+    margin-left:450px;
+	min-height:60px;
+	width:510px;
+  background-image:url(images/58_13.gif);
+	background-repeat:no-repeat;	
+}
+
+
+div.header-menu ul li a{
+text-decoration:none;
+float:left;
+padding:0px 8px;
+font-size:15px;
+color:gray;	
+font-family:"Times New Roman", Times, serif;
+}
+div.header-menu ul{
+width:550px;
+list-style-type:none;	
+margin-bottom:0px;
+display:inline;
+}
+div.header-menu ul li{
+}
+ 
+div.header-menu a:hover{
+color:#000;	
+font-size:16px;
+}
+div.header-text h3{
+color:#000;
+font-size:17px;
+font-family:Arial, Helvetica, sans-serif;
+}
+div.header-text{
+color:#aaa;
+font-size:16px;
+font-family:"Times New Roman", Times, serif;
+margin:0px;
+}
+div.left p,div.right p,div.middle p{
+color:#aaa;
+font-size:16px;
+font-family:"Times New Roman", Times, serif;
+margin-top:150px;
+}
+div.footer1 ul li a,div.footer2 ul li a{
+text-decoration:none;
+color:#999;
+padding:5px;
+font-size:12px;
+}
+div.footer1 ul li,div.footer2 ul li{
+list-style-position:outside;
+}
+
+
+
+h4{
+color:#555;
+font-size:12px;	
+}
+div.footer2 ul{
+list-style-type:square;
+}
+
+div.footer3 a{
+text-decoration:none;
+color:#333;
+font-size:11px;
+margin-left:6px;	
+}
+div.footer3 p{
+font-size:12px;
+color:#999;
+display:inline;
+}
+.footer3 span{
+background-color:#dc0;
+font-size:12px;	
+color:#888;	
+}
+
+div.footer4 p{
+color:#999;
+font-size:12px;
+margin-left:8px;
+}
+
+div.footer-r p{
+color:#999;
+font-size:11px;
+display:inline;
+}
+div.lable{
+width:191px;
+height:33px;
+background-color:#dc0;
+opacity:1.0;
+filter:alpha(opacity=100);
+
+}
+div.lable-right{
+width:140px;
+}
+
+div.lable-left{
+width:102px;
+}
+
+.lable a{
+text-decoration:none;
+color:#333;
+font-size:23px;
+font-family:Tahoma, Geneva, sans-serif;
+padding-left:5px;
+}
+.lable a:hover{
+opacity:0.4;
+filter:alpha(opacity=40);
+}
+div.footer1 h4,div.footer2 h4{
+margin-left:21px;
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="header">
+		<div class="header-l"></div>
+		<div class="header-r">
+                <div class="header-menu">
+                	<ul>
+            		<li> <a href="#"> Accuel </a> </li>
+                	<li> <a href="#">Studio </a> </li>
+                	<li> <a href="#"> Services </a> </li>
+                	<li> <a href="#"> Portfolio </a> </li>
+                	<li> <a href="#"> Blog </a> </li>
+                	<li> <a href="#"> Contact </a> </li>
+            		</ul>
+                </div>
+				<div class="header-text">
+                
+              	<h3> Une agence web a taille humaine,une equipe a vorte ecoute.</h3>
+                 Chez Impala Webstudio,nous sommes une equipe de passionnes,creative et dynamique.<br/>
+                Nous realisons des sites internet clairs et efficases.De La simplicite en somme,pour vous et<br/>
+                vos clients.
+                </div>
+                <div class="clear"></div>
+        </div>
+  </div>
+
+<div class="content">
+		<div class="content-top">
+        	<div class="top-in"> Nouvella realisation E-commerce<br/><span> Sainthimat</span></div>
+        </div>
+		<div class="content-down">
+			<div class="left">
+            	<div class="lable lable-left">
+                    <a href="http://wordox.com"> L'equipe</a>
+                </div>
+
+            	<p>C'est dans I'enceinte d'une anciennne ecole que<br/>
+                l'equipe d'lmpala Webstudio active ses meninges et<br/>
+                sa craetive.Un lieu avant tout convivial,ou le travail<br/>
+                et la bonne humeur fontbon menge.</p>
+            
+            </div>
+			<div class="right">
+             	<div class="lable lable-right">
+                    <a href="http://newsletter.com"> En coulisses</a>
+                </div>
+            	<p>Les dessuse de l'agence au 43 rue Charlie <br/>
+                Chaplin, les demieres actualiteis, mais aussi les<br/>
+                nouvelles realisations...En parccountant notre blog,<br/>
+                plongz les coulisses d'impala Webstudio.</p>
+            
+            </div>
+            <div class="middle">
+				<div class="lable">
+                	<a href="http://tea.com">Une pause cafe'?</a>
+                </div>
+
+            	<p>Grands buverus de cafe que nous sommes,nous<br/>
+                sernons ravis de vous offirir une petite tasse de ce<br/>
+                breuvage torrefie. Alors si vous passez dans le coin,<br/>
+                n'hesitez pas!.. Avec ou sans sucre? </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+</div>
+        
+<div class="footer">
+		<div class="footer-top">
+        		<div class="footer1">
+                  <h4> IMPALA WEBSTUDIO </h4>
+                	<ul>
+            		<li> <a href="#"> Accuel </a> </li>
+                	<li> <a href="#">Studio </a> </li>
+                	<li> <a href="#"> Services </a> </li>
+                	<li> <a href="#"> Portfolio </a> </li>
+                	<li> <a href="#"> Blog </a> </li>
+                	<li> <a href="#"> Contact </a> </li>
+            		</ul>
+                </div>
+                <div class="footer2">
+                   <h4> <img src="images/2365_13.gif" width="12" height="12"/>
+                   QUOI DE NEUF? </h4>
+                   <ul>
+            		<li> <a href="#"> Musique maestro </a> </li>
+                	<li> <a href="#"> rementeds le loup. ie renard et la belette</a> </li>
+                	<li> <a href="#"> La vertiable nature des implas </a> </li>
+                	<li> <a href="#"> Laissons lassons, erriter le soler </a> </li>
+            		</ul>
+                </div>
+                 <div class="footer3">
+                   <h4> RESTONS ON CONTACT </h4>
+                   <img src="images/2365_17.gif" width="18" height="10"/>
+                   <span> 03 20 26 96 25</span><br/>
+                   	&#64; <span> contact@impala-webstudio.fr</span><br/>
+                     <img src="images/021_03.gif" width="13" height="9"/>
+                   <span> 43 rue Charli Chaplin 59100 RQUBAIX </span><br/>
+                   <p>  <img src="images/2365_22.gif" width="18" height="23"/> 
+                    Trouvez-nous rapidment<br/> sur </p> <a href="http://googlemaps.com"> Google Maps</a>
+                   
+                 </div>
+        		<div class="footer4">
+                <br/>
+                   <h4> RECEVEZ NOTRE NEWSLETTER </h4>
+                   <p> Restez informes des derneres actus et<br/> potins de l'agence!
+                   </p> 
+                   <form action="mailto" method="get"> <input type="text" placeholder="Votre email ici" size="22"/>
+                   <input type="button" value="ok" />
+                   </form>
+                   <p> votre adres se email ne sera en aucnun cas revende,<br/>
+                   ou utili see une societe que la note.</p> 
+                </div>
+                <div class="clear"></div>
+        </div>
+        <div class="footer-down"> 
+        		<div class="footer-r">
+                	  <p> Copyright &copy; 2010 Impala Webstudio-Tous droits sensenes.<br/>
+                Site declare la CNIL-</p> Mentions legales
+                </div>
+                <div class="footer-l"></div>
+                <div class="clear"></div>
+
+        </div>
+</div>
+
+</div>
+</body>
+</html>
