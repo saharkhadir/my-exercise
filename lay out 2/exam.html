@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lay out 2</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+background-image:url(images/The.jpg);
+background-position:center;
+background-repeat:no-repeat;
+z-index:-1;
+background-color:#eee;}
+/*div{outline:1px dashed #F0F;
+}*/
+div.clear{
+	width:0px;
+	height:0px;
+	clear:both;
+}
+
+
+div.container {
+	width:980px;
+	min-height:1342px;
+	margin:0 auto;
+}
+
+div.header {
+min-height:112px;
+background-color:transparent;
+
+}
+
+div.header-top {
+min-height:25px;
+padding:11px 14px 11px 900px;
+
+}
+div.header-in{
+width:215px;
+float:right;
+height:25px;
+background-color:#CF0;
+
+}
+div.header-bottom {
+min-height:64px;
+background-color:#FFF;
+background-image:url(images/Fire_03.gif);
+background-position:top left;
+background-repeat:no-repeat;
+margin-bottom:0px;
+padding:12px 0px 0px;
+
+}
+
+div.trans{
+	min-height:10px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+
+div.content {
+	min-height:400px;
+    padding:12px 12px 20px 20px;
+	background-color:white;
+}
+
+div.content-left {
+	float:left;
+	width:700px;
+	min-height:342px;
+	background-image:url(images/Fire_07.gif);
+	margin-top:5px;
+
+}
+
+div.content-right {
+	min-height:370px;
+	margin-left:720px;
+	margin-top:5px;
+}
+
+
+div.content-down {
+min-height:400px;
+width:auto;
+background-color:#222;
+background-image:url(images/2_03.gif);
+background-position:top;
+background-repeat:no-repeat;
+
+}
+div.left{
+margin-left:725px;
+min-height:400px;
+}
+div.mid{
+	width:230px;
+	float:left;
+	min-height:400px;
+
+}
+div.right{
+	width:495px;
+	float:left;
+	min-height:400px;
+
+}
+
+div.footer{
+	width:auto;
+	min-height:100px;
+	background-color:transparent;
+}
+div.footer-l{
+	float:left;
+	min-height:100px;
+	width:500px;
+	font-size:10px;
+}
+div.footer-r{
+	min-height:100px;
+	
+}
+a,b,p{
+	display:inline;
+	font-size:10px;}
+
+div.header-bottom ul,div.footer-r ul{
+display:inline;
+list-style-type:none;	
+float:right;
+width:430px;
+}
+
+div.footer-r ul{
+	width:355px;
+}
+
+div.header-bottom ul li a,div.footer-r ul li a{
+text-decoration:none;
+float:left;
+padding:0px 8px;
+font-size:15px;
+color:gray;	
+font-family:"Times New Roman", Times, serif;
+}
+
+div.header-bottom a:hover{
+color:#000;	
+font-size:16px;
+}
+h1{
+font-family:Tahoma, Geneva, sans-serif;
+line-height:22px;
+text-align:top right;
+margin:0;}
+p{
+font-family:Tahoma, Geneva, sans-serif;
+color:gray;	
+line-height:20px;
+}
+
+#see{
+color:black;
+}
+
+div.galery {
+	min-height:250px;
+	background-color:white;
+	padding-top:20px;
+	padding-bottom:0px;
+}
+
+
+div.galery ul{
+list-style-type:none;
+width:980px;
+margin-left:0px;
+}
+
+div.galery ul li{
+float:left;
+}
+div.galery ul li img{
+margin-left:0px;
+padding:0px 8px;
+margin-left:5px;
+ 
+}
+
+div.galery a{text-decoration:none;
+}
+
+h5{text-align:center;
+padding-top:0px;
+margin:2px;
+}
+
+.text{
+text-align:center;
+margin-left:40px;
+}
+
+.text3{
+text-align:center;
+margin-left:65px;
+}
+
+.right img{
+margin-top:55px;
+padding:0 15px 0 20px;
+
+}
+.right p{
+font-size:13px;	
+}
+
+.right a{
+font-size:13px;
+color:white;
+text-align:top left;}
+
+.right img.im{
+margin-top:25px;
+}
+.right p.position{
+padding-left:80px;}
+.mid h4{
+text-align:top left;
+margin-top:160px;
+color:#Fdd;}	
+	
+div.footer-r ul li a{
+	color:#000;
+	font-size:12px;}	
+.footer-l p{
+color:#999;
+font-size:10px;	
+}
+
+div.noghte{
+height:30px;
+background-image:url(images/3.gif);
+background-repeat:no-repeat;
+padding-left:0px;	
+}
+div.donoghte{
+	height:10px;
+	background-image:url(images/20_03.gif);
+	margin-top:240px;	
+}
+
+.content-right p,a{font-size:13px;}
+	
+</style>
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+	<div class="header">
+		<div class="header-top">
+        	<div class="header-in">
+        	<b>E: </b> <a href="#"/> info@yoursite.com </a>  |
+            <p> <b> T:</b> 1.800.555.1234 </p>
+        	</div>
+        </div>
+	    <div class="header-bottom">
+        	<ul>
+            	<li> <a href="#"> Home </a> </li>
+                <li> <a href="#">Portfolio </a> </li>
+                <li> <a href="#"> Drops </a> </li>
+                <li> <a href="#"> Full Width </a> </li>
+                <li> <a href="#">Archivs </a> </li>
+                <li> <a href="#"> Blog </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+            </ul>
+		</div>
+  </div>
+  <div class="trans"></div>
+	<div class="content">
+		<div class="content-left"></div>
+		<div class="content-right">
+       	  <h1> We<br/>are<br/>scope.</h1>
+            <br/>
+          <p> Aenean lachiena bibendum nulla sed
+            consectetor .Cars matines consectetor purussit amet
+            fermentum .Donec idelit nonmi porta gravida at eget. <br/><br/>
+            vestibolum id liguelaporta felis eusid semper.Donec ullumcorper
+            nulla nonmetus aucutar fringilla.<br/><br/><br/><br/>
+            <a id="see" href="#"> See our work... </a>
+			</p>
+		</div>
+         <div class="noghte"> </div>
+		<div class="clear"> </div>
+        
+	<div class="galery">
+    <ul>
+        <li> <a href="http://google.com"> <img src="images/Fire_10.gif" width="192" height="138"/> </a> <br/>
+        	 <h5> Loueise Attadue(Video)</h5> 
+             <p class="text">  Art Direction ,Motino Graphics  </p> 
+        </li>
+        
+        <li><a href="http://google.com"> <img src="images/Fire_12.gif" width="192" height="138"/> </a>
+        	<h5> Big Bog Bunny(Video)</h5> 
+        	<p class="text">  Art Direction ,Motino Graphics  </p>
+         </li>
+         
+        <li> <a href="http://google.com"> <img src="images/Fire_14.gif" width="205" height="138"/> </a>
+			<h5> See Breeze(audio)</h5> 
+        	<p class="text3"> Audio ,Graphic Design  </p>        
+         </li>
+        <li> <a href="http://google.com"> <img src="images/Fire_16.gif" width="192" height="138"/> </a>
+        
+			<h5> Black Coffee</h5> 
+        	<p class="text3"> Graphic Design ,Print Design  </p>        
+        </li>
+
+   </ul>
+   <div class="donoghte"></div>
+    </div>
+    </div>
+    <div class="trans"></div>
+	<div class="content-down">
+        <div class="right">
+        	<img src="images/Fire_22.gif" width="40" height="46"	/>
+          <b> <a href="yahoo.com" > Standard Poat With The Whole Kaboodle </a></b>
+          <br/><br/>
+             <p class="position">   Donec sed odio dui.vitae dlit libero,a pharetra augu.</p> 
+          <p class="position">   Nullam id dolor id nibh ultricies vehicula ut id eli.Integer</p>
+           <p class="position">  posuere erat a ante veneatis dapibus posuere velit aliquet.Duis</p>
+           <p class="position">  mollis,est non... </p> 
+        
+            <br/>
+            <img class="im" src="images/Fire_22.gif" width="40" height="46"/>
+            <b> <a href="google.com"> tind Promotional Poster </a></b>
+            <br/><br/> 
+           <p class="position">   Donec sed odio dui.vitae dlit libero,a pharetra augu.</p> 
+          <p class="position">   Nullam id dolor id nibh ultricies vehicula ut id eli.Integer</p>
+           <p class="position">  posuere erat a ante veneatis dapibus posuere velit aliquet.Duis</p>
+           <p class="position">  mollis,est non... </p> 
+        
+        </div>
+    	<div class="mid">
+        	<h4> Follow On Twitter </h4>
+        </div>
+    	<div class="left"></div>
+	</div>
+	<div class="footer">
+		<div class="footer-l">
+        	 &copy;2012 <p> scope.</p> Powered by<p> WordPress <br/>
+             Scope Team  </p>by <p> Orman Clarck  </p>
+		</div>
+		<div class="footer-r">
+        	<ul>
+            	<li> <a href="#"> Home </a> </li>
+                <li> <a href="#">Portfolio </a> </li>
+                <li> <a href="#"> Full Width </a> </li>
+                <li> <a href="#">Archivs </a> </li>
+                <li> <a href="#"> Blog </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+            </ul>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
